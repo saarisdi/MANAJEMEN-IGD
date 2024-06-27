@@ -1,0 +1,71 @@
+.developer img {
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    right: -150%; /* Menggeser gambar ke kiri */
+    margin-top : 30%;
+}
+
+.developer.move img {
+    transform: rotate(360deg);
+}
+
+.developers {
+    display: flex;
+    flex-wrap: wrap; /* Baris baru untuk item yang tidak muat */
+}
+
+.developer {
+    width: 200px; /* Lebar item */
+    margin-right: 500px; /* Jarak antara item */
+    margin-bottom: 300px; /* Jarak antara baris */
+}
+
+h1 {
+    text-align: center; /* Atur teks menjadi di tengah */
+    margin-top: 10%; 
+}
+
+.developer {
+    position: relative;
+}
+
+.developer h3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0; /* Menghapus margin bawaan */
+}
+
+.developer p {
+    position: absolute;
+    top: calc(50% + 70px); /* Atur posisi 20px di bawah h2 */
+    left: 70%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 0; /* Menghapus margin bawaan */
+}
+
+footer {
+    text-align: center;
+    font-size: 24px; /* Ukuran teks */
+    margin-top: 50px; /* Jarak dari atas */
+    color: #666; /* Warna teks */
+}
+    
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+}
